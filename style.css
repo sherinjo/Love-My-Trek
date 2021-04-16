@@ -348,7 +348,7 @@ ul.submenu li a.active {
 
 /* background images for banner */
 .banner-w3ls-1 {
-    background: url(../images/1.jpg) no-repeat top;
+    background: url(../1.jpg) no-repeat top;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -357,7 +357,7 @@ ul.submenu li a.active {
 }
 
 .banner-w3ls-2 {
-    background: url(../images/2.jpg) no-repeat center;
+    background: url(../2.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -366,7 +366,7 @@ ul.submenu li a.active {
 }
 
 .banner-w3ls-3 {
-    background: url(../images/3.jpg) no-repeat bottom;
+    background: url(../3.jpg) no-repeat bottom;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -375,7 +375,7 @@ ul.submenu li a.active {
 }
 
 .banner-w3ls-4 {
-    background: url(../images/4.jpg) no-repeat center;
+    background: url(../4.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -620,7 +620,7 @@ a.animated-button {
 
 /* contact */
 .contact {
-    background: url(../images/bg2.jpg) no-repeat center;
+    background: url(../bg2.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
