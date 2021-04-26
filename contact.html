@@ -3,6 +3,7 @@
 
 <head>
 	<title>Love My Trek</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
@@ -74,7 +75,7 @@
 		<div class="container py-xl-5 py-lg-3">
 			<h3 class="tittle text-center text-bl mt-5 mb-sm-5 mb-4">Talk to Us!</h3>
 			<div class="contact-form mx-auto text-center">
-				<form method="post" action="mailto:sherinj73@gmail.com">
+				<form id="submit-form" action="">
 					<div class="row">
 						<div class="col-lg-6 form-group">
 							<input type="text" class="form-control" placeholder="Name" name="name" required="">
@@ -138,7 +139,26 @@
 		</div>
 	</div>
 	<!-- //copyright bottom -->
-
+	<script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzZlIENKGzwccahYFEdiJKSSkHdb23h7BCmQCpp9usEzkDh2JhnBxEMNbvLQ5HIfaA-/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
+
